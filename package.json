@@ -1,8 +1,8 @@
 {
-  "name": "clean-arch-with-nestjs",
+  "name": "clean-arch-with-nestjs-start-template",
   "version": "0.0.1",
   "description": "",
-  "author": "",
+  "author": "welingtoncassis",
   "private": true,
   "license": "UNLICENSED",
   "scripts": {

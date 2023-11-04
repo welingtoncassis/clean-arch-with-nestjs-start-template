@@ -24,11 +24,11 @@
 
 # The benefits of a clean architecture are:
 
-Independent of Framework.
-Testable.
-Independent of UI.
-Independent of Databases.
-Independent of External.
+- Independent of Framework.
+- Testable.
+- Independent of UI.
+- Independent of Databases.
+- Independent of External.
 
 # How to run this project
 

@@ -29,3 +29,9 @@ Testable.
 Independent of UI.
 Independent of Databases.
 Independent of External.
+
+# How to run this project
+
+- `npm i`
+- `npm run typeorm:src migration:run`
+- `npm run start:dev`

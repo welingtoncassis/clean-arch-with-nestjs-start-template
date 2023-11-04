@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { DatabaseConfig } from '../../../../domains/config/database.interface';
+import { DatabaseConfig } from '../../../domains/config/database.interface';
 import { ConfigService } from '@nestjs/config';
 
 @Injectable()

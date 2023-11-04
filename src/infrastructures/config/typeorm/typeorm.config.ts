@@ -1,15 +1,11 @@
 import { DataSource } from 'typeorm';
 
 const config = new DataSource({
-  type: 'postgres',
-  host: process.env.DATABASE_HOST,
-  port: 32768,
-  username: process.env.DATABASE_USER,
-  password: process.env.DATABASE_PASSWORD,
-  database: process.env.DATABASE_NAME,
+  type: 'sqlite',
+  database: 'database.sqlite',
   entities: [__dirname + './../../**/*.entity{.ts,.js}'],
   synchronize: true,
-  schema: process.env.DATABASE_SCHEMA,
+  logging: false,
   migrationsRun: true,
   migrations: ['database/migrations/**/*{.ts,.js}'],
 });

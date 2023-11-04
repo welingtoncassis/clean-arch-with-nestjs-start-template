@@ -1,5 +1,5 @@
 import { DynamicModule, Module } from '@nestjs/common';
-import { EnvironmentConfigModule } from '../../enviroment-config/infrastructures/config/environment-config/environment-config.module';
+import { EnvironmentConfigModule } from '../config/environment-config/environment-config.module';
 import { RepositoriesModule } from '../repositories/repository.module';
 import { UserRepositoryOrm } from '../repositories/user.repository';
 import { GetAllUserUseCases } from '../../applications/use-cases/get-all-users.usecase';
@@ -30,7 +30,10 @@ export class UsecaseProxyModule {
             new UseCaseProxy(new CreateUserUseCases(userRepository)),
         },
       ],
-      exports: [UsecaseProxyModule.GET_ALL_USERS_USE_CASE],
+      exports: [
+        UsecaseProxyModule.GET_ALL_USERS_USE_CASE,
+        UsecaseProxyModule.CREATE_USER_USE_CASE,
+      ],
     };
   }
 }

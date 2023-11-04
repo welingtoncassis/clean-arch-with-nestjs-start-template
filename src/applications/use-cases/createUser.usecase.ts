@@ -1,6 +1,6 @@
 import { UserRepository } from 'src/domains/repositories/user.repository';
-import { CreateUserDto } from 'src/presentations/user/dto/create-user.dto';
 import { UserEntity } from '../../domains/entities/user.entity';
+import { CreateUserDto } from '../../domains/dto/create-user.dto';
 
 export class CreateUserUseCases {
   constructor(private usersRepository: UserRepository) {}

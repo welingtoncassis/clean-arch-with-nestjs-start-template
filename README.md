@@ -21,3 +21,11 @@
 # Use cases proxy
 
 - Use cases proxy will connect the use cases with the infrastructure to presentation layer uses.
+
+# The benefits of a clean architecture are:
+
+Independent of Framework.
+Testable.
+Independent of UI.
+Independent of Databases.
+Independent of External.

@@ -17,3 +17,7 @@
 - Domains: Represents the enterprise business layer in the form of models and abstractions from the repository.
 - Infrastructures: Contains frameworks and external tools, such as database, repository configuration and implementation.
 - Presentations: Adapter that connects the use case with the external layer.
+
+# Use cases proxy
+
+- Use cases proxy will connect the use cases with the infrastructure to presentation layer uses.
